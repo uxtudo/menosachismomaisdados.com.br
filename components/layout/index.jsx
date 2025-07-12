@@ -1,0 +1,43 @@
+import { Button } from "@/components/ui/button";
+import Logo from "@/components/logo";
+
+export const Section = ({ children, className = "", id }) => (
+  <section id={id} className={`py-8 md:py-16 ${className}`}>
+    <div className="container mx-auto px-4">{children}</div>
+  </section>
+);
+
+export const SectionTitle = ({ children, className = "" }) => (
+  <h2 className={`text-3xl md:text-4xl font-bold text-center ${className}`}>{children}</h2>
+);
+
+export const SectionSubtitle = ({ children, className = "" }) => (
+  <p className={`text-lg mt-2 text-center max-w-3xl mx-auto ${className}`}>{children}</p>
+);
+
+export const Header = () => (
+  <header className="shadow-inner bg-opacity-15 w-[90%] md:w-[70%] lg:w-[75%] lg:max-w-screen-xl top-5 mx-auto sticky border border-secondary z-40 rounded-2xl flex justify-between items-center p-2 bg-card">
+    <a className="font-bold text-lg flex items-center" href="/">
+      <Logo width="181" height="32" />
+    </a>
+    <div className="flex items-center lg:hidden">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-menu cursor-pointer lg:hidden" type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-:R9ja:" data-state="closed"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
+    </div>
+    <nav aria-label="Main" data-orientation="horizontal" dir="ltr" className="relative z-10 max-w-max flex-1 items-center justify-center hidden lg:block mx-auto">
+      <div style={{position:"relative"}}>
+        <ul data-orientation="horizontal" className="group flex flex-1 list-none items-center justify-center space-x-1" dir="ltr">
+          <li><a className="text-base px-2" data-radix-collection-item="" href="#features">Funcionalidades</a></li>
+          <li><a className="text-base px-2" data-radix-collection-item="" href="#testimonials">Depoimentos</a></li>
+          <li><a className="text-base px-2" data-radix-collection-item="" href="#agenda">Agenda</a></li>
+          <li><a className="text-base px-2" data-radix-collection-item="" href="#location">Localização</a></li>
+          <li><a className="text-base px-2" data-radix-collection-item="" href="#sponsors">Patrocinadores</a></li>
+          <li><a className="text-base px-2" data-radix-collection-item="" href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div className="absolute left-0 top-full flex justify-center"></div>
+    </nav>
+    <div className="hidden lg:flex">
+      <Button className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2">Garanta seu ingresso</Button>
+    </div>
+  </header>
+);
