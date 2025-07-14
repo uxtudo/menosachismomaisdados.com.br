@@ -16,7 +16,7 @@ const HeroSection = () => (
         </div>
       </div>
       <div className="hidden md:block rounded-lg">
-         <img src="https://analyticssummit.com.br/wp-content/uploads/2024/09/hero_summit.webp" alt="Placeholder Image" className="w-full h-full object-cover rounded-lg" />
+         <img src="https://imagens.metricasboss.com.br/hero_summit_webp_4b75ca1525.webp" alt="Placeholder Image" className="w-full h-full object-cover rounded-lg" />
       </div>
     </div>
   </Section>

@@ -5,53 +5,53 @@ import { Section, SectionTitle } from "@/components/layout";
 const agendaItems = [
   {
     time: "09:00 - 09:30",
-    title: "Abertura e Boas-Vindas",
-    speakers: ["Organização do Evento"],
+    title: "Em breve",
+    speakers: [],
   },
   {
     time: "09:30 - 10:30",
-    title: "Inteligência Artificial no Mundo dos Negócios",
-    speakers: ["João Silva"],
+    title: "Em breve",
+    speakers: [],
   },
   {
     time: "10:30 - 11:00",
-    title: "Coffee Break e Networking",
+    title: "Em breve",
     speakers: [],
   },
   {
     time: "11:00 - 12:00",
-    title: "Estratégias de Marketing Digital para o Crescimento",
-    speakers: ["Maria Oliveira"],
+    title: "Em breve",
+    speakers: [],
   },
   {
     time: "12:00 - 13:30",
-    title: "Almoço",
+    title: "Em breve",
     speakers: [],
   },
   {
     time: "13:30 - 14:30",
-    title: "Análise de Dados para Tomada de Decisão",
-    speakers: ["Pedro Costa"],
+    title: "Em breve",
+    speakers: [],
   },
   {
     time: "14:30 - 15:30",
-    title: "Workshop: Construindo seu Primeiro Dashboard",
-    speakers: ["Equipe de Suporte"],
+    title: "Em breve",
+    speakers: [],
   },
   {
     time: "15:30 - 16:00",
-    title: "Coffee Break e Networking",
+    title: "Em breve",
     speakers: [],
   },
   {
     time: "16:00 - 17:00",
-    title: "Painel de Discussão: O Futuro dos Dados",
-    speakers: ["João Silva", "Maria Oliveira", "Pedro Costa", "Ana Souza"],
+    title: "Em breve",
+    speakers: [],
   },
   {
     time: "17:00 - 18:00",
-    title: "Encerramento e Sorteios",
-    speakers: ["Organização do Evento"],
+    title: "Em breve",
+    speakers: [],
   },
 ];
 
