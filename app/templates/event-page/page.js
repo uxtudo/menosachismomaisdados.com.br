@@ -21,7 +21,7 @@ export default function EventPage() {
         <AgendaSection />
         <SpeakersSection />
         <LocationSection />
-        <EventPricingSection />
+        <EventPricingSection id="pricing" />
         <SponsorsSection />
         <FaqSection />
       </main>

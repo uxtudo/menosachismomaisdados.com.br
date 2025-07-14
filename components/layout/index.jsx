@@ -26,10 +26,10 @@ export const Header = () => (
     <nav aria-label="Main" data-orientation="horizontal" dir="ltr" className="relative z-10 max-w-max flex-1 items-center justify-center hidden lg:block mx-auto">
       <div style={{position:"relative"}}>
         <ul data-orientation="horizontal" className="group flex flex-1 list-none items-center justify-center space-x-1" dir="ltr">
-          <li><a className="text-base px-2" data-radix-collection-item="" href="#features">Funcionalidades</a></li>
-          <li><a className="text-base px-2" data-radix-collection-item="" href="#testimonials">Depoimentos</a></li>
           <li><a className="text-base px-2" data-radix-collection-item="" href="#agenda">Agenda</a></li>
+          <li><a className="text-base px-2" data-radix-collection-item="" href="#speakers">Palestrantes</a></li>
           <li><a className="text-base px-2" data-radix-collection-item="" href="#location">Localização</a></li>
+          <li><a className="text-base px-2" data-radix-collection-item="" href="#pricing">Ingressos</a></li>
           <li><a className="text-base px-2" data-radix-collection-item="" href="#sponsors">Patrocinadores</a></li>
           <li><a className="text-base px-2" data-radix-collection-item="" href="#faq">FAQ</a></li>
         </ul>
@@ -37,7 +37,7 @@ export const Header = () => (
       <div className="absolute left-0 top-full flex justify-center"></div>
     </nav>
     <div className="hidden lg:flex">
-      <Button className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2">Garanta seu ingresso</Button>
+      <a href="#pricing"><Button size="lg">Garanta seu ingresso</Button></a>
     </div>
   </header>
 );
