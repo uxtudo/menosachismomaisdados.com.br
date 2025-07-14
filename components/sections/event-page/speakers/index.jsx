@@ -4,46 +4,53 @@ import { Section, SectionTitle, SectionSubtitle } from "@/components/layout";
 
 const speakers = [
   {
-    name: "Bernardo Marotta",
-    title: "CMO",
-    linkedin: "https://www.linkedin.com/in/bernardo-marotta-84172925/",
-    image: "https://analyticssummit.com.br/wp-content/uploads/2024/09/bernardo_marotta.webp",
-    companyImage: "https://analyticssummit.com.br/wp-content/uploads/2024/09/01_Cogna.webp"
+    "name": "Layla Sayed",
+    "title": "Brand Measurement Activation Lead",
+    "linkedin": "https://www.linkedin.com/in/layla-sayed-nicolas/",
+    "image": "https://imagens.metricasboss.com.br/Layla_Sayed_af4704f7e6.webp",
+    "companyImage": "https://imagens.metricasboss.com.br/Google_4cc3a59982.webp"
   },
   {
-    name: "Brenna Carvalho",
-    title: "Coordenadora de Mídia Sênior",
-    linkedin: "https://www.linkedin.com/in/brennacarvalho/",
-    image: "https://analyticssummit.com.br/wp-content/uploads/2024/09/brenna_carvalho.webp",
-    companyImage: "https://analyticssummit.com.br/wp-content/uploads/2024/09/10_Personare.webp"
+    "name": "Aline Onishi",
+    "title": "Helping Product Teams Grow with Data",
+    "linkedin": "https://www.linkedin.com/in/aline-nami-onishi/",
+    "image": "https://imagens.metricasboss.com.br/Aline_Onishi_b554df4b24.webp",
+    "companyImage": "https://imagens.metricasboss.com.br/Minders_4bacd02392.webp"
   },
   {
-    name: "Carolina Nicolini",
-    title: "Brazil Sales Lead",
-    linkedin: "https://www.linkedin.com/in/nicolini/",
-    image: "https://analyticssummit.com.br/wp-content/uploads/2024/09/carol_nicolina-2.webp",
-    companyImage: "https://analyticssummit.com.br/wp-content/uploads/2024/09/03_Minders.webp"
+    "name": "Caio Tramontina",
+    "title": "IT Superintendent",
+    "linkedin": "https://www.linkedin.com/in/caiotramontina/",
+    "image": "https://imagens.metricasboss.com.br/Caio_Tramontina_9d87b09d99.webp",
+    "companyImage": "https://imagens.metricasboss.com.br/Itau_v02_3d22806326.webp"
   },
   {
-    name: "Claudio Bonel",
-    title: "Cientista de Dados",
-    linkedin: "https://www.linkedin.com/in/bonel/",
-    image: "https://analyticssummit.com.br/wp-content/uploads/2024/09/claudio_bonel.webp",
-    companyImage: "https://analyticssummit.com.br/wp-content/uploads/2024/09/quali_quanti-1.webp"
+    "name": "Gustavo Esteves",
+    "title": "CEO da Métricas Boss",
+    "linkedin": "https://www.linkedin.com/in/estevesgea/",
+    "image": "https://imagens.metricasboss.com.br/Gustavo_Esteves_8eb96021e0.webp",
+    "companyImage": "https://imagens.metricasboss.com.br/Metricas_Boss_fa0ac1558d.webp"
+  },
+   {
+    "name": "Lucian Fialho",
+    "title": "CTO da Métricas Boss",
+    "linkedin": "https://www.linkedin.com/in/estevesgea/",
+    "image": "https://imagens.metricasboss.com.br/Gustavo_Esteves_febbc3fd37.webp",
+    "companyImage": "https://imagens.metricasboss.com.br/Metricas_Boss_fa0ac1558d.webp"
   },
   {
-    name: "Gustavo Esteves",
-    title: "Tsubasa na Métricas Boss",
-    linkedin: null,
-    image: "https://analyticssummit.com.br/wp-content/uploads/2023/05/gustavo_esteves.jpg",
-    companyImage: "https://analyticssummit.com.br/wp-content/uploads/2024/09/logotipo_metricas_boss.webp"
+    "name": "Mafê Neurauter",
+    "title": "Head de Business Analytics",
+    "linkedin": "https://www.linkedin.com/in/maf%C3%AA-neurauter-b792462b5/",
+    "image": "https://imagens.metricasboss.com.br/Mafe_Neurauter_fe7919601f.webp",
+    "companyImage": "https://imagens.metricasboss.com.br/Metricas_Boss_fa0ac1558d.webp"
   },
   {
-    name: "Lucas Pedote",
-    title: "Head & Heart of Data & AI",
-    linkedin: "https://www.linkedin.com/in/lucaspedote/",
-    image: "https://analyticssummit.com.br/wp-content/uploads/2024/09/lucas_pedote.webp",
-    companyImage: "https://analyticssummit.com.br/wp-content/uploads/elementor/thumbs/05_Ifood-qu0lhspqrle7ozoboxhhih2mvkghmzv59mqkih4934.webp"
+    "name": "Rafael Rez",
+    "title": "Fundador da consultoria Web Estratégica Analytics",
+    "linkedin": "https://www.linkedin.com/in/rafaelrez/",
+    "image": "https://imagens.metricasboss.com.br/Rafael_Rez_878ea4d26a.webp",
+    "companyImage": "https://imagens.metricasboss.com.br/Web_Estrategica_d6502f0447.webp"
   }
 ];
 
