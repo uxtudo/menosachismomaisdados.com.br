@@ -1,4 +1,4 @@
-import { Header } from "@/components/layout";
+import { EventHeader } from "@/components/layout/event-header";
 import HeroSection from "@/components/sections/hero";
 import CountdownSection from "@/components/sections/countdown";
 
@@ -14,7 +14,7 @@ import Footer from "@/components/sections/footer";
 export default function EventPage() {
   return (
     <div className="flex flex-col min-h-screen bg-white dark:bg-black">
-      <Header />
+      <EventHeader />
       <main className="flex-grow">
         <HeroSection />
         <CountdownSection />

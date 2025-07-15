@@ -21,7 +21,7 @@ export default function Home() {
   return (
     <main className="bg-[#1A1A1A] flex flex-col items-center justify-center min-h-screen py-2">
       <div className="py-8">
-        <Logo width="140" height="40" className="text-white" />
+        <Logo width="140" height="40" className="text-white" src="https://imagens.metricasboss.com.br/logotipo_metricas_boss_SVG_60dc3b19b4.svg" />
       </div>
       <Linktree links={links} />
     </main>
