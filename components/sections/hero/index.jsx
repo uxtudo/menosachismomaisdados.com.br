@@ -1,10 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { Section, SectionTitle, SectionSubtitle } from "@/components/layout";
+import { Badge } from "@/components/ui/badge";
 
 const HeroSection = () => (
   <Section className="text-center md:text-left bg-[#070C16]">
     <div className="grid md:grid-cols-2 gap-12 items-center">
       <div className="space-y-6">
+        <Badge className="text-[#FB900B] mb-4">16 de outubro | São Paulo</Badge>
         <h1 className="text-4xl md:text-6xl font-bold tracking-tighter text-white leading-tight">
           O maior evento de <span className="text-[#00BAFF]">Digital Analytics</span> da América Latina
         </h1>
