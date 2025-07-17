@@ -119,7 +119,7 @@ const EventPricingSection = () => {
           <div className="flex flex-col space-y-6">
             <Badge className="text-white px-4 py-2 text-base" style={{ background: '#4B5563' }}>Pré-Evento</Badge>
             {/* Seção para título e subtítulo */}
-            <div className="text-left min-h-[4rem]">
+            <div className="text-left min-h-[5rem]">
               <h3 className="text-white text-2xl font-bold">{eventBatches[0].title}</h3>
               <p className="text-gray-400">{eventBatches[0].subtitle}</p>
             </div>
@@ -142,7 +142,7 @@ const EventPricingSection = () => {
             </div>
             {/* Área para botão de ação */}
             <div className="text-left">
-              <Button className="w-full border-2 border-[#189725] text-white bg-transparent hover:bg-[#070C16] hover:text-[#189725]" asChild={eventBatches[0].buttonLink ? true : false} variant="outline">
+              <Button className="w-full h-14 border-2 border-[#189725] text-white bg-transparent hover:bg-[#070C16] hover:text-[#189725]" asChild={eventBatches[0].buttonLink ? true : false} variant="outline" size="lg">
                 {eventBatches[0].buttonLink ? <a href={eventBatches[0].buttonLink}>{eventBatches[0].buttonText}</a> : eventBatches[0].buttonText}
               </Button>
             </div>
@@ -153,13 +153,13 @@ const EventPricingSection = () => {
 
           {/* Bottom Block */}
           <div className="flex-grow">
-            <h4 className="text-white text-xl font-semibold mb-4 px-4">Você terá acesso a:</h4>
+            <h4 className="text-white text-lg font-semibold mb-4 px-4">Compre este ingresso e receba:</h4>
             {/* Área para lista de recursos */}
             <ul className="text-white">
               {eventBatches[0].features.map((feature, featureIndex) => (
-                <li key={featureIndex} className={`flex items-start py-3 px-4 ${featureIndex % 2 === 0 ? 'bg-gray-900' : ''}`}>
-                  <div className="rounded-full bg-gray-400 p-1 mr-2">
-                    <Check className="h-2 w-2 text-[#070C16]" />
+                <li key={featureIndex} className={`flex items-start py-3 px-4`}>
+                  <div className="flex-shrink-0 w-6 h-6 flex items-center justify-center mr-2">
+                    <Check className="h-4 w-4 text-white" />
                   </div>
                   {feature}
                 </li>
@@ -174,7 +174,7 @@ const EventPricingSection = () => {
           <div className="flex flex-col space-y-6">
             <Badge className="text-white px-4 py-2 text-base" style={{ background: 'linear-gradient(to right, #0052D0, #00BAFF)' }}>Oportunidade Única</Badge>
             {/* Seção para título e subtítulo */}
-            <div className="text-left min-h-[4rem]">
+            <div className="text-left min-h-[5rem]">
               <h3 className="text-white text-2xl font-bold">{eventBatches[1].title}</h3>
               <p className="text-gray-400">{eventBatches[1].subtitle}</p>
             </div>
@@ -197,7 +197,7 @@ const EventPricingSection = () => {
             </div>
             {/* Área para botão de ação */}
             <div className="text-left">
-              <Button className="w-full" asChild={eventBatches[1].buttonLink ? true : false} variant="success">
+              <Button className="w-full h-14" asChild={eventBatches[1].buttonLink ? true : false} variant="success" size="lg">
                 {eventBatches[1].buttonLink ? <a href={eventBatches[1].buttonLink}>{eventBatches[1].buttonText}</a> : eventBatches[1].buttonText}
               </Button>
             </div>
@@ -208,22 +208,22 @@ const EventPricingSection = () => {
 
           {/* Bottom Block */}
           <div className="flex-grow">
-            <h4 className="text-white text-xl font-semibold mb-4 px-4">Você terá acesso a:</h4>
+            <h4 className="text-white text-lg font-semibold mb-4 px-4">Compre este ingresso e receba:</h4>
             {/* Área para lista de recursos */}
             <ul className="text-white">
               {eventBatches[1].features.map((feature, featureIndex) => {
                 const isSubItem = feature.startsWith("- ");
                 return (
-                  <li key={featureIndex} className={`flex items-start py-3 px-4 ${isSubItem ? "font-light pl-6" : ""} ${featureIndex % 2 === 0 ? 'bg-gray-900' : ''}`}>
-                    <div className={`p-1 mr-2 flex items-center justify-center ${isSubItem ? '' : 'rounded-full bg-gray-400'}`}>
-                      {isSubItem ? (
-                        <Circle className="h-2 w-2" />
-                      ) : (
-                        <Check className={`h-2.5 w-2.5 text-[#070C16]`} />
-                      )}
-                    </div>
-                    {isSubItem ? feature.substring(2) : feature}
-                  </li>
+                  <li key={featureIndex} className={`flex items-start py-3 px-4 ${isSubItem ? "font-light pl-6" : ""}`}>
+                  <div className="flex-shrink-0 w-6 h-6 flex items-center justify-center mr-2">
+                    {isSubItem ? (
+                      <Circle className="h-2 w-2 text-white" />
+                    ) : (
+                      <Check className="h-4 w-4 text-white" />
+                    )}
+                  </div>
+                  {isSubItem ? feature.substring(2) : feature}
+                </li>
                 );
               })}
             </ul>
